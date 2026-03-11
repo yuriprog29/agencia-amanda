@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+
+
+
+.cabecalho {
+    background-color: #a80000;
+    /* Define a cor de fundo */
+    display: flex;
+    /* Ativa o sistema Flexbox para organizar os elementos */
+    align-items: center;
+    /* Alinha os elementos verticalmente (de pé) ao centro */
+    justify-content: space-evenly;
+    /* Distribui os elementos horizontalmente (deitado) com espaços iguais entre eles */
+    padding:10px;
+    /* Adiciona um espaço interno dentro do elemento */
+    font-family: "Notable", sans-serif;
+    /* Define a fonte do texto */
+}
+
+.titulo {
+    font-size: 60px;
+    font-family: PT Serif Caption;
+    color: black;
+}
+
+.logo-01 {
+    width: 200px;
+}
+
+
+.ul-lista {
+    list-style: none;
+    /* removendo as bolinhas da lista */
+
+}
+
+/* estlizacao da UL (elemento pai da LI) */
+.ul-lista {
+    display: flex;
+    /* deixa o menu em linha */
+    gap: 20px;
+    /* espaço entre os itens */
+}
+
+.ul-lista li a {
+    text-decoration: none;
+    /* desabilitando a decorao de texto */
+    color: black;
+    /* dando cor a letra*/
+    font: size 20px;
+    /*tamanho da letra*/
+    font-weight: 800;
+    /* peso espessura da letra*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.section-01{
+    background-color: ;
+}
