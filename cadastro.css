@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+
+
+
+/* REMOVE MARGENS PADRÃO DO NAVEGADOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    background-color: #000000;
+    /* Define a cor de fundo */
+    display: flex;
+    /* Ativa o sistema Flexbox para organizar os elementos */
+    align-items: center;
+    /* Alinha os elementos verticalmente (de pé) ao centro */
+    justify-content: space-evenly;
+    /* Distribui os elementos horizontalmente (deitado) com espaços iguais entre eles */
+    padding: 10px;
+    /* Adiciona um espaço interno dentro do elemento */
+    font-family: "Notable", sans-serif;
+    /* Define a fonte do texto */
+}
+
+.titulo {
+    font-size: 60px;
+    font-family: PT Serif Caption;
+    color: rgb(255, 255, 255);
+}
+
+.logo-01 {
+    width: 150px;
+}
+
+.ul-lista {
+    list-style: none;
+    /* removendo as bolinhas da lista */
+
+}
+
+/* estlizacao da UL (elemento pai da LI) */
+.ul-lista {
+    display: flex;
+    /* deixa o menu em linha */
+    gap: 20px;
+    /* espaço entre os itens */
+}
+
+.ul-lista li a {
+    text-decoration: none;
+    /* desabilitando a decorao de texto */
+    color: #ffffff;
+    /* dando cor a letra*/
+    font: size 20px;
+    /*tamanho da letra*/
+    font-weight: 800;
+    /* peso espessura da letra*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.btn-home{
+color: #ffffff;
+background-color: #000000;
+font-size: 30px;
+border: none;
+
+}
+
+.formulario-01{
+background-color: #C1A68D;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+}
+
+.section-02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #C1A68D;
+    font-family: "Notable", sans-serif;
+    ;
+    background-image: url(imagens/imagens\ section2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+
+}
+
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    
+    gap: 30px;
+    font-size: 20px;
+}
+
+
+.img-foolter {
+ width: 100px;
+}
+
+.footer-informacoes{
+      flex-direction: column;
+    gap: 30px;
+}
+
+
+
+.diretos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}

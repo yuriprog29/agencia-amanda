@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
 
 
+/* REMOVE MARGENS PADRÃO DO NAVEGADOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .cabecalho {
-    background-color: #EBE1C5;
+    background-color: #000000;
     /* Define a cor de fundo */
     display: flex;
     /* Ativa o sistema Flexbox para organizar os elementos */
@@ -11,7 +18,7 @@
     /* Alinha os elementos verticalmente (de pé) ao centro */
     justify-content: space-evenly;
     /* Distribui os elementos horizontalmente (deitado) com espaços iguais entre eles */
-    padding:10px;
+    padding: 10px;
     /* Adiciona um espaço interno dentro do elemento */
     font-family: "Notable", sans-serif;
     /* Define a fonte do texto */
@@ -20,11 +27,11 @@
 .titulo {
     font-size: 60px;
     font-family: PT Serif Caption;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .logo-01 {
-    width: 200px;
+    width: 150px;
 }
 
 
@@ -45,7 +52,7 @@
 .ul-lista li a {
     text-decoration: none;
     /* desabilitando a decorao de texto */
-    color: black;
+    color: #ffffff;
     /* dando cor a letra*/
     font: size 20px;
     /*tamanho da letra*/
@@ -55,10 +62,12 @@
 
 }
 
-.section-01{
- background-color:#C1A68D ;
 
-   display: flex;
+
+.section-01 {
+    background-color: #C1A68D;
+
+    display: flex;
     align-items: center;
     /* alinhamento vertial */
 
@@ -71,45 +80,48 @@
     padding: 30px;
     /* Define um espaçamento interno de 20 pixels dentro do elemento */
 
-    gap: 30px;
+
 
 }
 
-.img-carro{
+.img-carro {
     width: 400px;
     margin: 30px;
 }
 
-.div-texto-section1{
- width: 300px;
-   height: 300px;/* deixa as caixas do mesmo tamanho*/
-   background-color: #EBE1C5;
-   padding: 20px; /*prenchimento interno*/
-  text-align: center; /*alinhamento dos txt*/
+.div-texto-section1 {
+    width: 300px;
+    height: 300px;
+    /* deixa as caixas do mesmo tamanho*/
+    background-color: #EBE1C5;
+    padding: 20px;
+    /*prenchimento interno*/
+    text-align: center;
+    /*alinhamento dos txt*/
 
 }
 
-.fa-star{
-font-size: 30px;
-color: black;
+.fa-star {
+    font-size: 30px;
+    color: black;
 }
 
 
-.div-texto-section1 p{
-font-size: 15px;
-font-family:Sans-Serif Moderna ;
- font-weight: 700;
+.div-texto-section1 p {
+    font-size: 15px;
+    font-family: Sans-Serif Moderna;
+    font-weight: 700;
 }
 
-.link-cadastro{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+.link-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.link-cadastro button{
-background: linear-gradient(30deg, #000000, #EBE1C5);
+.link-cadastro button {
+    background: linear-gradient(30deg, #000000, #EBE1C5);
     /* Cria um fundo com gradiente inclinado em 30 graus */
 
     color: #ffe1a0;
@@ -139,19 +151,115 @@ background: linear-gradient(30deg, #000000, #EBE1C5);
 }
 
 
-.section-02{
+
+
+.section-02 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     color: #C1A68D;
-    font-family:"Notable", sans-serif; ;
-    background-image:url(imagens/imagens\ section2.png) ;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center; 
-padding: 200px;
+    font-family: "Notable", sans-serif;
+    ;
+    background-image: url(imagens/imagens\ section2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
 
 
 }
 
+/* SECTION 3 CARROS */
+
+.carros {
+    background: #C1A68D;
+    padding: 30px;
+    text-align: center;
+}
+
+.lista-carros {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+
+.carros-img {
+
+    background: #EBE1C5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #00000033;
+
+    width: 250px;
+}
+
+.cars-img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+.section-04 {
+    background-color: #000000;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.tabela-1 {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.titulo-tabela {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: "Notable";
+}
+
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+}
+
+
+.img-foolter {
+ width: 100px;
+}
+
+.footer-informacoes{
+      flex-direction: column;
+    gap: 30px;
+}
+
+
+
+.diretos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
