@@ -3,12 +3,20 @@
 
 /* REMOVE MARGENS PADRÃO DO NAVEGADOR */
 * {
+    /* Seleciona TODOS os elementos da página */
     margin: 0;
+    /* Remove a margem padrão que os navegadores aplicam nos elementos */
     padding: 0;
+    /* Remove o espaçamento interno padrão dos elementos */
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    /* Faz com que padding e border sejam incluídos no tamanho total do elemento */
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
+/*ESTILIZAÇÃO DO HEADER*/
 .cabecalho {
     background-color: #000000;
     /* Define a cor de fundo */
@@ -22,16 +30,31 @@
     /* Adiciona um espaço interno dentro do elemento */
     font-family: "Notable", sans-serif;
     /* Define a fonte do texto */
+
+    position: sticky;
+    /*faz com que o elemento fique "grudado" na tela quando o usuario rolar a pagina*/
+    top: 0%;
+    /*define que o elemento ficara preso ao topo da tela(0px de distancia ao topo)*/
+    left: 0%;
+    /*define o alinhamento a esquerda da pagina, mantendono 0px de distancia*/
+    z-index: 1;
+    /*controla a sobreposicao do elemento sobre outros elementos de página*/
+
+
 }
 
 .titulo {
     font-size: 60px;
+    /*define o tamanh da letra*/
     font-family: PT Serif Caption;
+    /*aplicando a fonte importada*/
     color: rgb(255, 255, 255);
+    /*cor da letra*/
 }
 
 .logo-01 {
     width: 150px;
+    /*define tamanho da imagem */
 }
 
 
@@ -62,12 +85,24 @@
 
 }
 
+ .ul-lista li a:hover{
+    color: #111;
+ }
 
 
+
+
+/*FIM DA ESTILIZAÇÃO DO HEADER*/
+
+
+/*INICIO DA SECTION 01*/
 .section-01 {
     background-color: #C1A68D;
+    /*cor de fundo da section*/
 
     display: flex;
+    /*ativando para mexer no posicionamento*/
+
     align-items: center;
     /* alinhamento vertial */
 
@@ -91,9 +126,11 @@
 
 .div-texto-section1 {
     width: 300px;
+    /*define tamanho */
     height: 300px;
     /* deixa as caixas do mesmo tamanho*/
     background-color: #EBE1C5;
+    /*define a cor de fundo*/
     padding: 20px;
     /*prenchimento interno*/
     text-align: center;
@@ -150,9 +187,16 @@
 
 }
 
+.btn-cadastro:hover {
+    box-shadow: 10px 10px 15px rgba(100, 57, 0, 0.39);
+}
 
 
 
+/*FIM DA SECTION 01*/
+
+
+/*INICIO DA SECTION 02*/
 .section-02 {
     display: flex;
     align-items: center;
@@ -160,8 +204,8 @@
     font-size: 30px;
     color: #C1A68D;
     font-family: "Notable", sans-serif;
-    ;
     background-image: url(imagens/imagens\ section2.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,8 +214,11 @@
 
 }
 
-/* SECTION 3 CARROS */
+/*FIM DA SECTION 02*/
 
+
+
+/* SECTION 4 CARROS */
 .carros {
     background: #C1A68D;
     padding: 30px;
@@ -183,16 +230,14 @@
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
-
-}
+   }
 
 .carros-img {
 
     background: #EBE1C5;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 10px #00000033;
-
+   box-shadow: 10px 10px 20px black;
     width: 250px;
 }
 
@@ -201,7 +246,18 @@
     border-radius: 10px;
 }
 
+.carros-img:hover {
+    box-shadow: 15px 15px 20px black;
+     width: 300px;
+     background-color: #ffffff;
 
+}
+
+/*FIM DA SECTION 04*/
+
+
+
+/*INICIO DA SECTION 05*/
 .section-04 {
     background-color: #000000;
     padding: 50px;
@@ -231,26 +287,39 @@
     font-family: "Notable";
 }
 
+/*FIM DA SECTION 05*/
 
+
+/*INICIO DO FOOLTER*/
 footer {
     background-color: #111;
     color: white;
     padding: 40px;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
-    flex-direction: column;
+    justify-content: space-evenly;
     gap: 30px;
     font-size: 20px;
+
 }
 
+
+footer .fa-x-twitter,
+.fa-square-instagram,
+.fa-facebook {
+    color: #C1A68D;
+    font-size: 40px;
+    gap: 20px;
+
+
+}
 
 .img-foolter {
- width: 100px;
+    width: 100px;
 }
 
-.footer-informacoes{
-      flex-direction: column;
+.footer-informacoes {
+    flex-direction: column;
     gap: 30px;
 }
 
@@ -260,6 +329,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
+
+/*FIM DO FOOLTER*/
