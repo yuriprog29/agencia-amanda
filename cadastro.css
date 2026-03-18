@@ -38,7 +38,6 @@
 .ul-lista {
     list-style: none;
     /* removendo as bolinhas da lista */
-
 }
 
 /* estlizacao da UL (elemento pai da LI) */
@@ -68,6 +67,11 @@ background-color: #000000;
 font-size: 30px;
 border: none;
 
+}
+
+.btn-home:hover{
+color: #C1A68D;
+font-size: 32px;
 }
 
 .formulario-01{

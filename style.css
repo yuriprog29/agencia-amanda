@@ -10,325 +10,388 @@
     /* Remove o espaçamento interno padrão dos elementos */
     box-sizing: border-box;
     /* Faz com que padding e border sejam incluídos no tamanho total do elemento */
-}
-
-* {
     scroll-behavior: smooth;
+    /*transicao universal no scrrol de roçagem*/
+    }
+
+    /*ESTILIZAÇÃO DO HEADER*/
+    .cabecalho {
+        background-color: #000000;
+        /* Define a cor de fundo */
+        display: flex;
+        /* Ativa o sistema Flexbox para organizar os elementos */
+        align-items: center;
+        /* Alinha os elementos verticalmente (de pé) ao centro */
+        justify-content: space-evenly;
+        /* Distribui os elementos horizontalmente (deitado) com espaços iguais entre eles */
+        padding: 10px;
+        /* Adiciona um espaço interno dentro do elemento */
+        font-family: "Notable", sans-serif;
+        /* Define a fonte do texto */
+
+
+        /* POSICIONANDO O FOOLTER FIXO NA TELA*/
+        position: sticky;
+        /*faz com que o elemento fique "grudado" na tela quando o usuario rolar a pagina*/
+        top: 0%;
+        /*define que o elemento ficara preso ao topo da tela(0px de distancia ao topo)*/
+        left: 0%;
+        /*define o alinhamento a esquerda da pagina, mantendono 0px de distancia*/
+        z-index: 1;
+        /*controla a sobreposicao do elemento sobre outros elementos de página*/
+
+
+    }
+
+    .titulo {
+        font-size: 60px;
+        /*define o tamanh da letra*/
+        font-family: PT Serif Caption;
+        /*aplicando a fonte importada*/
+        color: rgb(255, 255, 255);
+        /*cor da letra*/
+    }
+
+    .logo-01 {
+        width: 150px;
+        /*define tamanho da imagem */
+    }
+
+
+    .ul-lista {
+        list-style: none;
+        /* removendo as bolinhas da lista */
+
+    }
+
+    /* estlizacao da UL (elemento pai da LI) */
+    .ul-lista {
+        display: flex;
+        /* deixa o menu em linha */
+        gap: 20px;
+        /* espaço entre os itens */
+    }
+
+    .ul-lista li a {
+        text-decoration: none;
+        /* desabilitando a decorao de texto */
+        color: #ffffff;
+        /* dando cor a letra*/
+        font: size 20px;
+        /*tamanho da letra*/
+        font-weight: 800;
+        /* peso espessura da letra*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .ul-lista li a:hover {
+        color: #C1A68D;
+        font-size: 21px;
+    }
+    /*FIM DA ESTILIZAÇÃO DO HEADER*/
+
+
+
+.whatsapp img{ /*alterando tamanho do icon whatsaap*/
+width: 40px;/*largura icon*/
 }
 
-/*ESTILIZAÇÃO DO HEADER*/
-.cabecalho {
-    background-color: #000000;
-    /* Define a cor de fundo */
+
+/*div que guarda o icon whatsapp*/
+.whatsapp{
+    position: fixed;/*posicionamento fixo*/
+    right: 25px; /*posicionamento á direita 25px*/
+    bottom: 40px;/*posicionamento a 25 px bottom*/
+}
+
+.whatsapp:hover{
+    width: 60px;
+    transition: 0.8s;
+}
+
+
+
+
+
+
+
+
+    /*INICIO DA SECTION 01*/
+    .section-01 {
+        background-color: #C1A68D;
+        /*cor de fundo da section*/
+
+        display: flex;
+        /*ativando para mexer no posicionamento*/
+
+        align-items: center;
+        /* alinhamento vertial */
+
+        justify-content: space-evenly;
+        /* alinhamento horizontal */
+
+        flex-direction: row;
+        /*direcao das caixas */
+
+        padding: 30px;
+        /* Define um espaçamento interno de 20 pixels dentro do elemento */
+
+
+
+    }
+
+    .img-carro {
+        width: 400px;
+        /*tamanho daimagem*/
+        margin: 30px;
+    }
+
+    .img-carro:hover{
+        box-shadow: 15px 15px 25px;
+        color: #111;
+        transition: 0.4s;
+        width: 420px;
+    }  
+
+    .div-texto-section1 {
+        width: 300px;
+        /*define tamanho */
+        height: 300px;
+        /* deixa as caixas do mesmo tamanho*/
+        background-color: #EBE1C5;
+        /*define a cor de fundo*/
+        padding: 20px;
+        /*prenchimento interno*/
+        text-align: center;
+        /*alinhamento dos txt*/
+
+    }
+
+    .fa-star {
+        font-size: 30px;
+        color: black;
+    }
+
+
+    .div-texto-section1 p {
+        font-size: 15px;
+        font-family: Sans-Serif Moderna;
+        font-weight: 700;
+    }
+
+    .link-cadastro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .link-cadastro button {
+        background: linear-gradient(30deg, #000000, #EBE1C5);
+        /* Cria um fundo com gradiente inclinado em 30 graus */
+
+        color: #ffe1a0;
+        /* Define a cor do texto como branca */
+
+        padding: 5px 12px;
+        /* Espaçamento interno (5px cima/baixo, 12px lados) */
+
+        height: 40px;
+        /* Altura fixa do botão */
+
+        border: none;
+        /* Remove a borda padrão */
+
+        border-radius: 30px;
+        /* Deixa as bordas arredondadas */
+
+        font-size: 18px;
+        /* Tamanho da fonte */
+
+        font-weight: bold;
+        /* Deixa o texto em negrito */
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        /* Adiciona sombra (x, y, desfoque, cor) */
+
+    }
+
+
+    /* Quando o mouse passar por cima do botão com classe .btn-cadastro */
+    .btn-cadastro:hover {
+        box-shadow: 10px 10px 15px rgba(100, 57, 0, 0.39); 
+         /* Adiciona uma sombra ao redor do botão (horizontal, vertical, desfoque, cor) */
+        height: 45px;
+         /* Define a altura do botão ao passar o mouse */
+    }
+
+
+
+    /*FIM DA SECTION 01*/
+
+
+    /*INICIO DA SECTION 02*/
+    .section-02 {
+       /* Define que os elementos dentro da section serão organizados em flexbox */
     display: flex;
-    /* Ativa o sistema Flexbox para organizar os elementos */
+
+    /* Alinha os itens verticalmente ao centro */
     align-items: center;
-    /* Alinha os elementos verticalmente (de pé) ao centro */
-    justify-content: space-evenly;
-    /* Distribui os elementos horizontalmente (deitado) com espaços iguais entre eles */
-    padding: 10px;
-    /* Adiciona um espaço interno dentro do elemento */
-    font-family: "Notable", sans-serif;
-    /* Define a fonte do texto */
 
-    position: sticky;
-    /*faz com que o elemento fique "grudado" na tela quando o usuario rolar a pagina*/
-    top: 0%;
-    /*define que o elemento ficara preso ao topo da tela(0px de distancia ao topo)*/
-    left: 0%;
-    /*define o alinhamento a esquerda da pagina, mantendono 0px de distancia*/
-    z-index: 1;
-    /*controla a sobreposicao do elemento sobre outros elementos de página*/
-
-
-}
-
-.titulo {
-    font-size: 60px;
-    /*define o tamanh da letra*/
-    font-family: PT Serif Caption;
-    /*aplicando a fonte importada*/
-    color: rgb(255, 255, 255);
-    /*cor da letra*/
-}
-
-.logo-01 {
-    width: 150px;
-    /*define tamanho da imagem */
-}
-
-
-.ul-lista {
-    list-style: none;
-    /* removendo as bolinhas da lista */
-
-}
-
-/* estlizacao da UL (elemento pai da LI) */
-.ul-lista {
-    display: flex;
-    /* deixa o menu em linha */
-    gap: 20px;
-    /* espaço entre os itens */
-}
-
-.ul-lista li a {
-    text-decoration: none;
-    /* desabilitando a decorao de texto */
-    color: #ffffff;
-    /* dando cor a letra*/
-    font: size 20px;
-    /*tamanho da letra*/
-    font-weight: 800;
-    /* peso espessura da letra*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
- .ul-lista li a:hover{
-    color: #111;
- }
-
-
-
-
-/*FIM DA ESTILIZAÇÃO DO HEADER*/
-
-
-/*INICIO DA SECTION 01*/
-.section-01 {
-    background-color: #C1A68D;
-    /*cor de fundo da section*/
-
-    display: flex;
-    /*ativando para mexer no posicionamento*/
-
-    align-items: center;
-    /* alinhamento vertial */
-
-    justify-content: space-evenly;
-    /* alinhamento horizontal */
-
-    flex-direction: row;
-    /*direcao das caixas */
-
-    padding: 30px;
-    /* Define um espaçamento interno de 20 pixels dentro do elemento */
-
-
-
-}
-
-.img-carro {
-    width: 400px;
-    margin: 30px;
-}
-
-.div-texto-section1 {
-    width: 300px;
-    /*define tamanho */
-    height: 300px;
-    /* deixa as caixas do mesmo tamanho*/
-    background-color: #EBE1C5;
-    /*define a cor de fundo*/
-    padding: 20px;
-    /*prenchimento interno*/
-    text-align: center;
-    /*alinhamento dos txt*/
-
-}
-
-.fa-star {
-    font-size: 30px;
-    color: black;
-}
-
-
-.div-texto-section1 p {
-    font-size: 15px;
-    font-family: Sans-Serif Moderna;
-    font-weight: 700;
-}
-
-.link-cadastro {
-    display: flex;
-    align-items: center;
+    /* Alinha os itens horizontalmente ao centro */
     justify-content: center;
-    flex-direction: column;
-}
 
-.link-cadastro button {
-    background: linear-gradient(30deg, #000000, #EBE1C5);
-    /* Cria um fundo com gradiente inclinado em 30 graus */
-
-    color: #ffe1a0;
-    /* Define a cor do texto como branca */
-
-    padding: 5px 12px;
-    /* Espaçamento interno (5px cima/baixo, 12px lados) */
-
-    height: 40px;
-    /* Altura fixa do botão */
-
-    border: none;
-    /* Remove a borda padrão */
-
-    border-radius: 30px;
-    /* Deixa as bordas arredondadas */
-
-    font-size: 18px;
-    /* Tamanho da fonte */
-
-    font-weight: bold;
-    /* Deixa o texto em negrito */
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    /* Adiciona sombra (x, y, desfoque, cor) */
-
-}
-
-.btn-cadastro:hover {
-    box-shadow: 10px 10px 15px rgba(100, 57, 0, 0.39);
-}
-
-
-
-/*FIM DA SECTION 01*/
-
-
-/*INICIO DA SECTION 02*/
-.section-02 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* Define o tamanho da fonte */
     font-size: 30px;
+
+    /* Define a cor do texto */
     color: #C1A68D;
+
+    /* Define a fonte do texto */
     font-family: "Notable", sans-serif;
+
+    /* Define uma imagem de fundo */
     background-image: url(imagens/imagens\ section2.png);
+
+    /* Faz com que o fundo fique fixo ao rolar a página */
     background-attachment: fixed;
+
+    /* Impede que a imagem de fundo se repita */
     background-repeat: no-repeat;
+
+    /* Faz a imagem cobrir toda a área da section */
     background-size: cover;
+
+    /* Centraliza a imagem de fundo */
     background-position: center;
+
+    /* Adiciona espaçamento interno na section */
     padding: 150px;
 
+    }
 
-}
+    /*FIM DA SECTION 02*/
 
-/*FIM DA SECTION 02*/
-
-
-
-/* SECTION 4 CARROS */
-.carros {
-    background: #C1A68D;
-    padding: 30px;
-    text-align: center;
-}
-
-.lista-carros {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-   }
-
-.carros-img {
-
-    background: #EBE1C5;
-    padding: 20px;
-    border-radius: 10px;
-   box-shadow: 10px 10px 20px black;
-    width: 250px;
-}
-
-.cars-img {
-    width: 200px;
-    border-radius: 10px;
-}
-
-.carros-img:hover {
-    box-shadow: 15px 15px 20px black;
-     width: 300px;
-     background-color: #ffffff;
-
-}
-
-/*FIM DA SECTION 04*/
+    .section-03 {
+        background-color: black;
+    }
 
 
 
-/*INICIO DA SECTION 05*/
-.section-04 {
-    background-color: #000000;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* SECTION 4 CARROS */
+    .carros {
+        background: #C1A68D;
+        padding: 30px;
+        text-align: center;
+    }
 
-}
+    .lista-carros {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
 
+    .carros-img {
 
+        background: #EBE1C5;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px #1d1c1c;
+        width: 250px;
+    }
 
-.tabela-1 {
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    .cars-img {
+        width: 200px;
+        border-radius: 10px;
+    }
 
-}
+    .carros-img:hover {
+        box-shadow: 15px 15px 20px black;
+        transition: 0.6s; /*cria uma transicao ao passar o mause expandindo a imagem*/
+        width: 300px;
+        background-color: #ffffff;
 
+    }
 
-.titulo-tabela {
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-family: "Notable";
-}
-
-/*FIM DA SECTION 05*/
-
-
-/*INICIO DO FOOLTER*/
-footer {
-    background-color: #111;
-    color: white;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 30px;
-    font-size: 20px;
-
-}
-
-
-footer .fa-x-twitter,
-.fa-square-instagram,
-.fa-facebook {
-    color: #C1A68D;
-    font-size: 40px;
-    gap: 20px;
-
-
-}
-
-.img-foolter {
-    width: 100px;
-}
-
-.footer-informacoes {
-    flex-direction: column;
-    gap: 30px;
-}
+    /*FIM DA SECTION 04*/
 
 
 
-.diretos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    /*INICIO DA SECTION 05*/
+    .section-04 {
+        background-color: #000000;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-/*FIM DO FOOLTER*/
+    }
+
+
+
+    .tabela-1 {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+
+    .titulo-tabela {
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-family: "Notable";
+    }
+
+    /*FIM DA SECTION 05*/
+
+
+    /*INICIO DO FOOLTER*/
+    footer {
+        background-color: #111;
+        color: white;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+        font-size: 20px;
+
+    }
+
+
+    footer .fa-x-twitter,
+    .fa-square-instagram,
+    .fa-facebook {
+        color: #C1A68D;
+        font-size: 30px;
+        gap: 10px;
+    }
+
+
+
+
+    .img-foolter {
+        width: 100px;
+    }
+
+    .footer-informacoes {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+
+    .diretos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*FIM DO FOOLTER*/
